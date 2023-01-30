@@ -2,6 +2,7 @@ const input = document.querySelector('#input')
 const list = document.querySelector('#to_do_list')
 const addItemm = document.querySelector('#add_item')
 
+var count=0;
 
 input.addEventListener('keydown', (e) => {
     if(e.key === 'Enter') {
@@ -26,15 +27,14 @@ addItem = (input) => {
 
     item.className = 'item';
     text.textContent = input;
-
+   
     checkIcon.className = 'fas fa-check-square';
     checkIcon.style.color = 'lightgray';
     checkIcon.addEventListener('click', () => {
-        checkIcon.style.color = 'limegreen';
+     if(count==0) {checkIcon.style.color = 'limegreen'; count++} else
+     if(count==1) {checkIcon.style.color = 'lightgray'; count=0} 
     })
-    checkIcon.addEventListener('dblclick', () => {
-        checkIcon.style.color = 'lightgray';
-    })
+    
     
     trashIcon.className = "fas fa-trash";
     trashIcon.style.color = "darkgray";
