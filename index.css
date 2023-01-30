@@ -22,7 +22,7 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	min-height: 70px;
-	padding: 0 20px;
+	padding: 0 10%;
 }
 
 #header h2 {
