@@ -30,11 +30,11 @@ body {
 }
 
 .user_input {
-	width: 350px;
+	width: 30vw;
 	text-align: center;
 }
 .user_input input {
-	width: 75%;
+	width: 20vw;
 	padding: 8px;
 	outline: none;
 	border: 1px solid lightgray;
@@ -64,7 +64,7 @@ body {
   }
   
 #to_do_list {
-	width: 500px;
+	width: 45%;
 	margin: auto;
 }
 .item{
@@ -93,9 +93,6 @@ body {
   }
 
 
-.fas.fa-check-square {
-}
-
   @media(max-width:1280px){
 	.container{width: 100%;}
   }
@@ -114,7 +111,7 @@ body {
   
 	.user_input{width: 70%;}
   
-	#to_do_list{width: 70%;}
+	#to_do_list{width: 50%;}
   }
   
   @media(max-width:480px){
